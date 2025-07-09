@@ -2,11 +2,12 @@ import { Personagem } from "./personagem.js";
 
 export class PersonagemArqueiro extends Personagem {
     destreza
-    tipo = "Arqueiro"
+    static tipo = "Arqueiro"
+    static descricao = "Você tem o meu arco!"
 
     constructor(nome, level, destreza) {
         super(nome, level);
-        this.destreza = destreza
+        this.destreza = destreza;
     }
 
     obterInsignia() {
