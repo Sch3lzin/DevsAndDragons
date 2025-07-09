@@ -8,10 +8,10 @@ export class PersonagemArqueiroMago extends Personagem {
     static tipo = "ArqueiroMago"
     static descricao = "Detentor de lancas e flechas mágicas!"
 
-    constructor(nome, level, destreza, elementoMagico, levelMagico, inteligencia) {
-        super(nome, level);
-        this.ladoArqueiro = new PersonagemArqueiro(nome, level, destreza);
-        this.ladoMago = new PersonagemMago(nome, level, elementoMagico, levelMagico, inteligencia);
+    constructor(nome, destreza, elementoMagico, levelMagico, inteligencia) {
+        super(nome);
+        this.ladoArqueiro = new PersonagemArqueiro(nome, destreza);
+        this.ladoMago = new PersonagemMago(nome, elementoMagico, levelMagico, inteligencia);
     }
 
     obterInsignia() {
